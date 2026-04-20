@@ -215,12 +215,17 @@ p { margin: 0 0 1em; }
   overflow: hidden;
   background: var(--color-bg-soft);
   aspect-ratio: 4 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.producto-visual img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
+.producto-visual img,
+.producto-visual svg {
+  width: 100%; height: 100%; object-fit: contain; display: block;
   transition: transform 0.4s ease;
 }
-.producto:hover .producto-visual img { transform: scale(1.05); }
+.producto:hover .producto-visual img,
+.producto:hover .producto-visual svg { transform: scale(1.04); }
 .producto-body { padding: 1.4rem 1.3rem 1.5rem; display: flex; flex-direction: column; flex: 1; }
 .producto-tag {
   display: inline-block;
