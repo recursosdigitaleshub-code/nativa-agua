@@ -213,15 +213,15 @@ p { margin: 0 0 1em; }
 .producto:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
 .producto-visual {
   overflow: hidden;
-  background: var(--color-bg-soft);
-  aspect-ratio: 4 / 5;
+  background: linear-gradient(180deg, #d7ecfa, #eef6ff);
+  aspect-ratio: 2 / 3;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .producto-visual img,
 .producto-visual svg {
-  width: 100%; height: 100%; object-fit: contain; display: block;
+  width: 100%; height: 100%; object-fit: cover; display: block;
   transition: transform 0.4s ease;
 }
 .producto:hover .producto-visual img,
